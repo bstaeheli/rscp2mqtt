@@ -339,6 +339,7 @@ int createRequest(SRscpFrameBuffer * frameBuffer) {
         protocol.appendValue(&rootValue, TAG_EMS_REQ_POWER_HOME);
         protocol.appendValue(&rootValue, TAG_EMS_REQ_POWER_GRID);
         protocol.appendValue(&rootValue, TAG_EMS_REQ_POWER_ADD);
+        protocol.appendValue(&rootValue, TAG_EMS_REQ_BAT_SOC);
         protocol.appendValue(&rootValue, TAG_EMS_REQ_COUPLING_MODE);
         protocol.appendValue(&rootValue, TAG_EMS_REQ_MODE);
         protocol.appendValue(&rootValue, TAG_EMS_REQ_STATUS);

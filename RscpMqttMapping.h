@@ -51,6 +51,7 @@ cache_t cache[] = {
     { 0, TAG_EMS_DERATE_AT_POWER_VALUE, 0, "e3dc/system/derate_at_power_value", "%0.1f", "", RSCP::eTypeFloat32, 1, 0, false },
     { 0, TAG_EMS_SET_POWER, 0, "e3dc/ems/set_power/power", "%i", "", RSCP::eTypeInt32, 1, 0, false },
     { 0, TAG_EMS_MODE, 0, "e3dc/mode", "%i", "", RSCP::eTypeUChar8, 1, 0, false },
+    { 0, TAG_EMS_BAT_SOC, 0, "e3dc/ems/bat_soc", "%i", "", RSCP::eTypeUChar8, 1, 0, false },
     { 0, TAG_EMS_COUPLING_MODE, 0, "e3dc/coupling/mode", "%i", "", RSCP::eTypeUChar8, 1, 0, false },
     // CONTAINER TAG_BAT_DATA --------------------------------------------------------------------
     { TAG_BAT_DATA, TAG_BAT_RSOC, 0, "e3dc/battery/rsoc", "%0.1f", "", RSCP::eTypeFloat32, 1, 0, false },
