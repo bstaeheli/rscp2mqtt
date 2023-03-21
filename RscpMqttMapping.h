@@ -51,7 +51,7 @@ cache_t cache[] = {
     { 0, TAG_EMS_DERATE_AT_POWER_VALUE, 0, "e3dc/system/derate_at_power_value", "%0.1f", "", RSCP::eTypeFloat32, 1, 0, false },
     { 0, TAG_EMS_SET_POWER, 0, "e3dc/ems/set_power/power", "%i", "", RSCP::eTypeInt32, 1, 0, false },
     { 0, TAG_EMS_MODE, 0, "e3dc/mode", "%i", "", RSCP::eTypeUChar8, 1, 0, false },
-    { 0, TAG_EMS_BAT_SOC, 0, "e3dc/ems/bat_soc", "%i", "", RSCP::eTypeUChar8, 1, 0, false },
+    { 0, TAG_EMS_BAT_SOC, 0, "e3dc/bat_soc", "%i", "", RSCP::eTypeUChar8, 1, 0, false },
     { 0, TAG_EMS_COUPLING_MODE, 0, "e3dc/coupling/mode", "%i", "", RSCP::eTypeUChar8, 1, 0, false },
     // CONTAINER TAG_BAT_DATA --------------------------------------------------------------------
     { TAG_BAT_DATA, TAG_BAT_RSOC, 0, "e3dc/battery/rsoc", "%0.1f", "", RSCP::eTypeFloat32, 1, 0, false },
@@ -63,6 +63,15 @@ cache_t cache[] = {
     { TAG_BAT_DATA, TAG_BAT_DEVICE_NAME, 0, "e3dc/battery/name", "%s", "", RSCP::eTypeString, 1, 0, false },
     { TAG_BAT_DATA, TAG_BAT_DCB_COUNT, 0, "e3dc/battery/dcb_count", "%i", "", RSCP::eTypeUChar8, 1, 0, false },
     { TAG_BAT_DATA, TAG_BAT_TRAINING_MODE, 0, "e3dc/battery/training", "%i", "", RSCP::eTypeUChar8, 1, 0, false },
+    // TODO: Implement multiple battery strings Test
+    { TAG_BAT_DATA, TAG_BAT_MODULE_VOLTAGE, 0, "e3dc/battery/1/voltage", "%0.1f", "", RSCP::eTypeFloat32, 1000, 0, false },
+    { TAG_BAT_DATA, TAG_BAT_CURRENT, 0, "e3dc/battery/1/current", "%0.1f", "", RSCP::eTypeFloat32, 1000, 0, false },
+    { TAG_BAT_DATA, TAG_BAT_CHARGE_CYCLES, 0, "e3dc/battery/1/cycles", "%u", "", RSCP::eTypeUInt32, 1000, 0, false },
+    { TAG_BAT_DATA, TAG_BAT_STATUS_CODE, 0, "e3dc/battery/1/status", "%u", "", RSCP::eTypeUInt32, 1000, 0, false },
+    { TAG_BAT_DATA, TAG_BAT_ERROR_CODE, 0, "e3dc/battery/1/error", "%u", "", RSCP::eTypeUInt32, 1000, 0, false },
+    { TAG_BAT_DATA, TAG_BAT_DEVICE_NAME, 0, "e3dc/battery/1/name", "%s", "", RSCP::eTypeString, 1000, 0, false },
+    { TAG_BAT_DATA, TAG_BAT_DCB_COUNT, 0, "e3dc/battery/1/dcb_count", "%i", "", RSCP::eTypeUChar8, 1000, 0, false },
+    { TAG_BAT_DATA, TAG_BAT_TRAINING_MODE, 0, "e3dc/battery/1/training", "%i", "", RSCP::eTypeUChar8, 1000, 0, false },
     // CONTAINER TAG_EMS_GET_POWER_SETTINGS ------------------------------------------------------
     { TAG_EMS_GET_POWER_SETTINGS, TAG_EMS_MAX_CHARGE_POWER, 0, "e3dc/ems/max_charge/power", "%u", "", RSCP::eTypeUInt32, 1, 0, false },
     { TAG_EMS_GET_POWER_SETTINGS, TAG_EMS_MAX_DISCHARGE_POWER, 0, "e3dc/ems/max_discharge/power", "%u", "", RSCP::eTypeUInt32, 1, 0, false },
