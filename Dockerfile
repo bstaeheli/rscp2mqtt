@@ -1,4 +1,3 @@
-# Pulling Alpine image
 FROM debian:bullseye-slim
 
 # Updating the packages
